@@ -27,11 +27,13 @@ shortPowCons$DateTime <- strptime(paste(shortPowCons$Date, shortPowCons$Time),
 # set locale and be sure is the right trellis setting
 Sys.setlocale("LC_TIME", "English") 
 #-------------------------------------------------------------------------------
-par(mfrow = c(1, 1))
+
 
 shortPowCons$Gl_act_pow_num <- as.numeric(shortPowCons$Global_active_power)
 
 png(filename="../../figure/plot2.png",  width= 480, height = 480)
+
+par(mfrow = c(1, 1))
 
 plot(shortPowCons$DateTime, shortPowCons$Gl_act_pow_num, type="l",
      ylab="Global Active Power (kilowatts)", xlab="")

@@ -27,13 +27,15 @@ shortPowCons$DateTime <- strptime(paste(shortPowCons$Date, shortPowCons$Time),
 # set locale and be sure is the right trellis setting
 Sys.setlocale("LC_TIME", "English") 
 #-------------------------------------------------------------------------------
-par(mfrow = c(1, 1))
+
 
 shortPowCons$sub_met_num1 <- as.numeric(shortPowCons$Sub_metering_1)
 shortPowCons$sub_met_num2 <- as.numeric(shortPowCons$Sub_metering_2)
 shortPowCons$sub_met_num3 <- as.numeric(shortPowCons$Sub_metering_3)
 
 png(filename="../../figure/plot3.png",  width= 480, height = 480)
+
+par(mfrow = c(1, 1))
 
 with(shortPowCons, plot(DateTime, shortPowCons$sub_met_num1, 
                         ylab="Energy sub metering", xlab="", type="n" ))
