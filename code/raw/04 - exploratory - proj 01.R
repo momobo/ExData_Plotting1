@@ -88,7 +88,7 @@ with(shortPowCons, {
     with(shortPowCons, points(DateTime, sub_met_num1, col="black", type="l"))
     with(shortPowCons, points(DateTime, sub_met_num2, col="red",   type="l"))
     with(shortPowCons, points(DateTime, sub_met_num3, col="blue",  type="l"))
-    legend("topright", lwd="1", 
+    legend("topright", lwd="1",  bty = "n",
            col=c("black", "red", "blue"), 
            legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     
@@ -106,4 +106,6 @@ source("./code/final/plot2.R", chdir=T)
 source("./code/final/plot3.R", chdir=T)
 source("./code/final/plot4.R", chdir=T)
 ?png
-
+?legend
+?plot
+par(bg=NA)

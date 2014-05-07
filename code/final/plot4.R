@@ -40,7 +40,7 @@ shortPowCons$Gl_rea_pow_num <- as.numeric(shortPowCons$Global_reactive_power)
 png(filename="../../figure/plot4.png",  width= 480, height = 480)
 
 # mfrow should be set after the opening of the device
-par(mfrow = c(2, 2))
+par(mfrow = c(2, 2), bg="transparent")
 # plotting
 with(shortPowCons, {
     # plot 1,1
@@ -56,7 +56,7 @@ with(shortPowCons, {
     with(shortPowCons, points(DateTime, sub_met_num1, col="black", type="l"))
     with(shortPowCons, points(DateTime, sub_met_num2, col="red",   type="l"))
     with(shortPowCons, points(DateTime, sub_met_num3, col="blue",  type="l"))
-    legend("topright", lwd="1", 
+    legend("topright", lwd="1", bty = "n",
            col=c("black", "red", "blue"), 
            legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     

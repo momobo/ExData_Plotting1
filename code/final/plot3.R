@@ -35,7 +35,7 @@ shortPowCons$sub_met_num3 <- as.numeric(shortPowCons$Sub_metering_3)
 
 png(filename="../../figure/plot3.png",  width= 480, height = 480)
 
-par(mfrow = c(1, 1))
+par(mfrow = c(1, 1), bg="transparent")
 
 with(shortPowCons, plot(DateTime, shortPowCons$sub_met_num1, 
                         ylab="Energy sub metering", xlab="", type="n" ))
