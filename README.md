@@ -1,6 +1,6 @@
 ## Introduction
 
-(*) see bottom of the file for developers note
+(*) see bottom of the file for developer note
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
@@ -114,11 +114,11 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
-## (*) Developers note
+## (*) Developer note
 R code is in directory ./code/finale
 
-In order to be indipendent from the file system launch the programs with source() and the parameter chdir=TRUE:
+In order to be indipendent from the file system you could launch the programs from R console with source() and the parameter chdir=TRUE:
 
 
-*source(plot1.R, chdir=T)*
+*source(<path to project in your filesystem>/code/finale/plot1.R, chdir=T)*
 
