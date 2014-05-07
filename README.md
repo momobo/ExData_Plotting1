@@ -118,5 +118,6 @@ The four plots that you will need to construct are shown below.
 R code is in directory ./code/finale
 
 In order to be indipendent from the file system launch the programs with source() and the parameter chdir=TRUE:
+
 *source(plot1.R, chdir=T)*
 
