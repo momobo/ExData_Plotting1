@@ -120,5 +120,5 @@ R code is in directory ./code/finale
 In order to be indipendent from the file system you could launch the programs from R console with source() and the parameter chdir=TRUE:
 
 
-*source(\<path to project in your filesystemi\>/code/finale/plot1.R, chdir=T)*
+*source(\<path to project in your filesystem\>/code/finale/plot1.R, chdir=T)*
 
